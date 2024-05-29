@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Валюта</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="convert_wrap">
+            <div class="convert_title">Check live foreign currency exchange rates</div>
+
+            <div class="form_wrapper">
+                <div class="form_title">
+                    <div class="form_title_icon">
+                        <img src="img/convert_img.svg" alt="#">
+                    </div>
+                    <div class="form_title_text">Convert</div>
+                </div>
+
+                <div class="form_block">
+                    <form action="#">
+                        <div class="inputs_line">
+                            <div class="amount_block input_block">
+                                <div class="amount_title">Amount</div>
+                                <input class="amount_inp" type="number" placeholder="1.00">
+                            </div>
+
+                            <div class="from_block input_block">
+                                <div class="from_title">From</div>
+                                <div class="select_wrap">
+                                    <select name="from" id="from">
+                                        <option value="" disabled selected hidden>Choose currency</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <!-- <button class="change">
+                                <img src="img/arrows-svgrepo-com 1.svg" alt="">
+                            </button> -->
+
+                            <div class="to_block input_block">
+                                <div class="to_title">To</div>
+                                <div class="select_wrap">
+                                    <select name="to" id="to">
+                                        <option value="" disabled selected hidden>Choose currency</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="result_block">
+                            <div class="result_info">
+                                <div class="from-currency_info currency_info">
+                                    <div class="from-currency_icon">
+                                        <img src="img/Vector.svg" alt="#">
+                                    </div>
+
+                                    <div class="info">
+                                        <div class="info_head">
+                                            <div class="info_head_currency currency_abb_from"></div>
+                                            <div class="info_head_currency_full currency_full_from"></div>
+                                        </div>
+
+                                        <div class="info_foorer currency_amount_from"></div>
+                                    </div>
+                                </div>
+
+                                <div class="img_block">
+                                    <img src="img/eq.svg" alt="#">
+                                </div>
+
+                                <div class="to-currency_info currency_info">
+                                    <div class="to-currency_icon">
+                                        <img src="img/Vector.svg" alt="#">
+                                    </div>
+
+                                    <div class="info">
+                                        <div class="info_head">
+                                            <div class="info_head_currency currency_abb_to"></div>
+                                            <div class="info_head_currency_full currency_full_to"></div>
+                                        </div>
+
+                                        <div class="info_foorer currency_amount_to"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="convert">Convert</button>
+                        </div>
+                    </form>
+
+                    <span class="info_text"></span>
+                </div>
+            </div>
+
+            <img class="img1" src="img/image 1.png" alt="#">
+            <img class="img2" src="img/image 2.png" alt="#">
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
